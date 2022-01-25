@@ -17,7 +17,7 @@ export const SecretLayout = ({ children }: Props) => {
 						<NavLink href={'/settings'}>Settings</NavLink>
 					</div>
 					<div className="flex items-center gap-3">
-						<span className="text-lg">Hello {session?.user?.name}!</span>
+						<span className="hidden text-lg md:inline">Hello {session?.user?.name}!</span>
 						<Button onClick={() => signOut()}>Sign out</Button>
 					</div>
 				</nav>
