@@ -4,7 +4,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## It also uses...
 
-- [jest](https://jestjs.io/) + [Testing Library](https://testing-library.com/) + [User Event](https://testing-library.com/docs/ecosystem-user-event/) as testing framework- [eslint](https://eslint.org/) + [prettier](https://prettier.io/) to ensure that the code follows a common style
+- [jest](https://jestjs.io/) + [Testing Library](https://testing-library.com/) + [User Event](https://testing-library.com/docs/ecosystem-user-event/) as testing framework
+- [eslint](https://eslint.org/) + [prettier](https://prettier.io/) to ensure that the code follows a common style
 - [NextAuth.js](https://next-auth.js.org/) for handling the authentication flow with GitHub
 - [RTK Query](https://redux-toolkit.js.org/rtk-query/overview) as state management library
 - [Next.js API Routes](https://nextjs.org/docs/api-routes/introduction) as backed for this fronted
