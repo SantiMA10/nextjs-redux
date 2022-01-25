@@ -1,0 +1,3 @@
+{
+  "extends": ["@santima10/eslint-config/nextjs"]
+}
