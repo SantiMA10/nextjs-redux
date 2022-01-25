@@ -1,3 +1,6 @@
 {
-  "extends": ["@santima10/eslint-config/nextjs"]
+	"extends": ["@santima10/eslint-config/nextjs"],
+	"env": {
+		"node": true
+	}
 }
