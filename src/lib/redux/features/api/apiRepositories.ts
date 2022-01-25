@@ -21,9 +21,9 @@ export const apiRepositories = createApi({
 		},
 	}),
 	endpoints: (builder) => ({
-		getRepositories: builder.query<Repository, void>({
+		getRepositories: builder.query<Repository[], void>({
 			query: () => '/repositories',
-			transformResponse: (response: ApiResponse<Repository>) => {
+			transformResponse: (response: ApiResponse<Repository[]>) => {
 				return response.data;
 			},
 		}),
