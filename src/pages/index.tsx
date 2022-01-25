@@ -1,21 +1,11 @@
 import type { NextPage } from 'next';
-import { useRouter } from 'next/router';
-import { signIn, useSession } from 'next-auth/react';
+import { signIn } from 'next-auth/react';
 
 const Home: NextPage = () => {
-	const router = useRouter();
-	useSession({
-		required: false,
-		onUnauthenticated: () => {
-			console.log('onUnauthenticated');
-			router.push('/dashboard');
-		},
-	});
-
 	return (
-		<>
+		<div className="grid h-full place-content-center">
 			<button onClick={() => signIn('github', { redirect: false })}>Sign in GitHub</button>
-		</>
+		</div>
 	);
 };
 
