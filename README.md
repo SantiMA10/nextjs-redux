@@ -1,4 +1,4 @@
-# nextjs-redux
+# nextjs-redux [![Deploy](https://github.com/SantiMA10/nextjs-redux/actions/workflows/deploy.yml/badge.svg)](https://github.com/SantiMA10/nextjs-redux/actions/workflows/deploy.yml) [![visit it](https://img.shields.io/badge/visit-it-blue)](https://nextjs-redux-three.vercel.app/)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
