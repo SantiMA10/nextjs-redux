@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { getSession } from 'next-auth/react';
 
-import { getRepositories } from '../../../lib/data/github';
+import { getStarredRepositories } from '../../../lib/data/github';
 
 export default async function protectedHandler(req: NextApiRequest, res: NextApiResponse) {
 	const session = await getSession({ req });
@@ -22,6 +22,6 @@ export default async function protectedHandler(req: NextApiRequest, res: NextApi
 		return;
 	}
 
-	res.status(200).json({ data: await getRepositories(session.accessToken) });
+	res.status(200).json({ data: await getStarredRepositories(session.accessToken) });
 	res.end();
 }
